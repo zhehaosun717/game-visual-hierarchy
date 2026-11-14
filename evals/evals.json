@@ -29,6 +29,13 @@
       "prompt": "我们的手机三消游戏，连消的时候爆炸特效、分数飘字、连击提示、道具充能提示会一起出现，测试玩家说看不清下一步能消哪里，也找不到系统提示的那一步。帮我把画面层级理一理，给美术和特效一份能照着执行的规范。",
       "expected_output": "Ranks by phase (resolving vs thinking) and gives the strongest channel to the hint during the thinking phase; stops or downgrades competing loops; gives an executable spec with units, render order, scheduling rules and red lines; asks for screenshots to calibrate while still giving starting values.",
       "files": []
+    },
+    {
+      "id": 5,
+      "name": "cozy-town-spec",
+      "prompt": "我在做一个治愈系的 2D 俯视角小镇经营游戏（Unity，手绘水彩风），画面要柔和、温暖、不刺眼。玩家要照看菜园、收集掉落物、和居民对话接委托，晚上和雨天也能出门。现在的问题是试玩的人经常找不到哪块作物该浇水了、哪些东西能捡、哪个居民有新委托。帮我定一份画面层级规范，既要让这些信息一眼能读到，又不能破坏画面的安静感。",
+      "expected_output": "Does not assume the cause without screenshots and gives a short triage first; ranks the three signals by count and urgency (the more numerous, the lighter each one); prefers in-world cues over icons so the calm mood survives; covers night, rain and tool-in-hand states; keeps state cues truthful (wet-looking soil must be watered); gives starting values in units artists can read and a check the user can run on their own screenshots.",
+      "files": []
     }
   ]
 }
