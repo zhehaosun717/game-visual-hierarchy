@@ -1,0 +1,22 @@
+[
+  {"query": "新截图里机器人在废料堆里是不是太难找了，背景是不是太花，帮我看看", "should_trigger": true},
+  {"query": "我的像素塔防后期满屏都是特效，敌人完全看不清，该从哪里下手改？", "should_trigger": true},
+  {"query": "can you review this boss fight screenshot? players keep saying they can't see the telegraphs, and art says the VFX are already super bright", "should_trigger": true},
+  {"query": "帮我给新关卡定一套配色规范：地面、平台、敌人、危险物、UI 分别该用什么明度范围", "should_trigger": true},
+  {"query": "这张 HUD 是不是太抢眼了？玩家说它挡住了下一步要操作的地方", "should_trigger": true},
+  {"query": "想在 32×32 的 LED 屏上做天气动画，怎么配色才能远看一眼认出是下雨还是晴天", "should_trigger": true},
+  {"query": "场景里加了很多发光植物和 bloom 之后，角色就融进背景了，怎么修比较好", "should_trigger": true},
+  {"query": "tileset 的地面纹理是不是太吵了？把 tiles.png 和 hero.png 放一起帮我看看", "should_trigger": true},
+  {"query": "帮我写美术风格指南里的“画面可读性”一章，给环境美术和特效美术定规则", "should_trigger": true},
+  {"query": "two HUD theme screenshots attached (theme_a.png, theme_b.png) - which one interferes less with gameplay readability?", "should_trigger": true},
+  {"query": "帮我把这张角色立绘用 AI 生成几个配色变体，再量化成 GBA 的 16 色调色板", "should_trigger": false},
+  {"query": "我们官网首页的视觉层级太乱，按钮和标题都在抢注意力，帮我重排一下 CSS", "should_trigger": false},
+  {"query": "Unity 里开了 bloom 之后帧率掉到 40，后处理怎么优化性能", "should_trigger": false},
+  {"query": "画一张各关卡通关率的柱状图，配色要色盲友好", "should_trigger": false},
+  {"query": "敌人 AI 太容易被风筝了，帮我改一下追击逻辑", "should_trigger": false},
+  {"query": "把 docs/art 下的 PNG 批量压缩并转成 ASTC，接进构建管线", "should_trigger": false},
+  {"query": "这把武器的 DPS 比其他武器高太多了，伤害和攻速怎么调平衡", "should_trigger": false},
+  {"query": "写一个卡通风格水面高光的 shader（URP）", "should_trigger": false},
+  {"query": "解释一下 HSL 和 HSB 两种色彩模型的区别", "should_trigger": false},
+  {"query": "帮我从这 40 张游戏截图里挑 5 张最适合放 Steam 商店页的", "should_trigger": false}
+]

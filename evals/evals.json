@@ -1,0 +1,34 @@
+{
+  "skill_name": "game-visual-hierarchy",
+  "notes": "Task prompts for checking the skill after changes. Run each with the skill and without it, then compare blind on: insight (what must the player read), actionability, evidence, fit, concision. Add your own screenshot-review cases from a real project; captures are not bundled here.",
+  "evals": [
+    {
+      "id": 1,
+      "name": "horror-plan",
+      "prompt": "我在做一个第一人称的暗色恐怖探索游戏（Unity URP，写实偏风格化）。玩家拿手电筒在废弃医院里探索，有可拾取的道具、可互动的门和抽屉、会追人的怪物，还有需要躲开的陷阱。还没开始做美术。帮我定一份画面层级规范：场景要够暗够压抑，但玩家不能因为看不清而挫败。",
+      "expected_output": "Estimates the flashlight falloff before setting ranges; specifies albedo ranges and a locked tone-mapping setup rather than only final-frame numbers; separates the bright-point signals by shape, height and motion; gives starting values marked as to-be-measured; covers every element the user named.",
+      "files": []
+    },
+    {
+      "id": 2,
+      "name": "boss-telegraph-diagnosis",
+      "prompt": "我们的 3D 动作游戏 Boss 战，测试玩家一直说看不清 Boss 的攻击前摇，经常莫名其妙就被打中了。美术说技能特效已经做得很亮了。场景是火山熔岩地形，到处是发光的岩浆裂缝和火星粒子，Boss 是暗红色的岩石巨人，攻击前摇是手臂发出橙红色的光。可能是哪里的问题？怎么改？",
+      "expected_output": "Diagnoses a channel collision (the telegraph shares hue and brightness with the lava) rather than insufficient brightness; proposes changing channel (hue outside the scene family, shape, ground marker, onset) before raising intensity; notes tone mapping washes out brighter emissives; lists non-visual causes; any mock comparison changes one variable at a time.",
+      "files": []
+    },
+    {
+      "id": 3,
+      "name": "led-weather-animation",
+      "prompt": "我有一块 32×32 的 LED 点阵屏，想做一个循环播放的天气动画：晴转多云再下雨，偶尔有闪电。帮我定配色和动画上的层级规则，让人在两三米外也能一眼看懂是什么天气。最好给出具体的调色板和每段动画大概怎么安排。",
+      "expected_output": "Asks about or looks up the panel's drive and upload limits; treats black as the canvas; makes the current weather the main signal and keeps it visible at distance; uses whole-screen tint as a state cue; keeps lightning within flash-safety limits; judges brightness perceptually rather than by HSB value.",
+      "files": []
+    },
+    {
+      "id": 4,
+      "name": "match3-feedback-spec",
+      "prompt": "我们的手机三消游戏，连消的时候爆炸特效、分数飘字、连击提示、道具充能提示会一起出现，测试玩家说看不清下一步能消哪里，也找不到系统提示的那一步。帮我把画面层级理一理，给美术和特效一份能照着执行的规范。",
+      "expected_output": "Ranks by phase (resolving vs thinking) and gives the strongest channel to the hint during the thinking phase; stops or downgrades competing loops; gives an executable spec with units, render order, scheduling rules and red lines; asks for screenshots to calibrate while still giving starting values.",
+      "files": []
+    }
+  ]
+}
